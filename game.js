@@ -75,20 +75,20 @@ function removeRandomTile(tileDeck) {
   var i = Math.floor(Math.random()*tileDeck.length);
   return tileDeck.splice(i, 1)[0];
 }
- 
+
 var memoryGameApp = angular.module('memoryGameApp', []);
- 
+
 memoryGameApp.factory('game', function() {
-  var picNames = ['puffypup', 'pic2', 'pic3', 'pic4', 'pic5',     'pic6', 'pic7', 'pic8'];
- 
+  var picNames = ['Band', 'Pic1965', 'uncle', 'redShirt', 'pro', '4th', 'brucensara', 'horse'];
+
   return new Game(picNames);
 });
- 
- 
-memoryGameApp.controller('GameCtrl', function GameCtrl($scope,     game) {
+
+
+memoryGameApp.controller('GameCtrl', function GameCtrl($scope, game) {
   $scope.game = game;
 });
- 
+
 memoryGameApp.directive('mgCard', function() {
   return {
     restrict: 'E',

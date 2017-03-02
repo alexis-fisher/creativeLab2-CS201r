@@ -1,14 +1,16 @@
 /* app css stylesheet */
 
 body{
-  width: 50%; 
+  width: 50%;
   margin: auto;
   padding-right: 150px;
-  padding-left: 50px;
+  padding-left: 150px;
+  background-color: #A4D4B4;
 }
 
 div {
   font-size: 30px;
+  text-align: center;
 }
 
 .container {
@@ -20,6 +22,9 @@ div {
   -ms-perspective: 800px;
   -o-perspective: 800px;
   perspective: 800px;
+  border-style: solid;
+  border-color: black;
+  text-align: center;
 }
 
 .card {
@@ -68,8 +73,22 @@ div {
   transform: rotateY( 180deg );
 }
 
+
 .message {
   width: 660px;
   text-align: center;
 }
 
+h1 {
+  text-align: center;
+  font-family: 'Monoton', cursive;
+  font-size: 65px;
+  color: #5E4557;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: #5E4557;
+  font-size: 35px;
+}
